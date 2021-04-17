@@ -15,20 +15,24 @@ services:
       - ./:/var/www
     networks:
       - fleet
+    depends_on:
+      - db
+      - nginx
 
   db:
-    image: mysql:5.7
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
     container_name: fleet-db
-    restart: unless-stopped
     environment:
       MYSQL_DATABASE: ${DB_DATABASE}
       MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
       MYSQL_PASSWORD: ${DB_PASSWORD}
-      MYSQL_USER: ${DB_USERNAME}
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
       - ./docker-compose/mysql:/docker-entrypoint-initdb.d
+      - ./docker-compose/mysql/config:/etc/mysql/conf.d
     networks:
       - fleet
 
@@ -37,7 +41,7 @@ services:
     container_name: fleet-nginx
     restart: unless-stopped
     ports:
-      - 8000:80
+      - 8000:8000
     volumes:
       - ./:/var/www
       - ./docker-compose/nginx:/etc/nginx/conf.d/
