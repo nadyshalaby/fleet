@@ -1,4 +1,4 @@
-## About Fleet Managment
+## About Fleet Management
 
 Fleet Management is a web application (bus-booking
 system) to enable users to search through trips and book seats, This project provides some features such as:
@@ -11,7 +11,7 @@ system) to enable users to search through trips and book seats, This project pro
 
 Fleet Management provides registration form for users to create their accounts and track their bookings.
 
-## Using Fleet Managment App
+### App (Credentials)
 
 -   Admin Account: `admin@gmail.com` & Password: `Nady_1234`
 -   Normal Account: `normal@gmail.com` & Password: `password`
