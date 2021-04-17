@@ -1,15 +1,15 @@
 ## About Fleet Managment
 
-Fleet Managment is a web application (bus-booking
+Fleet Management is a web application (bus-booking
 system) to enable users to search through trips and book seats, This project provides some features such as:
 
 -   [API Endpoints for users to book and search for available seats](https://documenter.getpostman.com/view/12757027/TzJsexHM).
--   Docker containerize app that runs per one command.
--   Powerful authetication system using [JWT Auth](https://jwt-auth.readthedocs.io/en/develop/laravel-installation/) and [cache](https://laravel.com/docs/cache) storage.
+-   Docker containerized app that runs per one command.
+-   Powerful authentication system using [JWT Auth](https://jwt-auth.readthedocs.io/en/develop/laravel-installation/) and [cache](https://laravel.com/docs/cache) storage.
 -   [Robust front-end UI/UX using AlpineJS](https://github.com/alpinejs/alpine).
--   Mysql Relational Database
+-   MySQL Relational Database
 
-Fleet provides registration interface for users to create their accounts and track their bookings.
+Fleet Management provides registration form for users to create their accounts and track their bookings.
 
 ## Using Fleet Managment App
 
@@ -69,4 +69,4 @@ I uses this pseudo-code to filter through the stops that passenger will pass thr
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Fleet Management is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
